@@ -1,0 +1,61 @@
+﻿<!doctype html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0" />
+    <title>Cryptasia - Secure Passwords Done Right</title>
+    <script type="text/javascript" src="./lib/crypto-js-3.0.2.js"></script>
+    <script type="text/javascript" src="./lib/vault.js"></script>
+    <script type="text/javascript" src="./lib/swfobject.js"></script>
+    <script type="text/javascript" src="./lib/ZeroClipboard.js"></script>
+    <!--[if IE]> <style type="text/css">input { line-height: 2em; }</style> <![endif]-->
+    <link rel="stylesheet" type="text/css" href="./lib/style.css" />
+    <script type="text/javascript" src="./lib/bsn.AutoSuggest_2.1.3.js" charset="utf-8"></script>
+    <link rel="stylesheet" href="./lib/autosuggest_inquisitor.css" type="text/css" media="screen" charset="utf-8" />
+    </head>
+  <body>
+    <div class="info">
+      <div class="sub">
+        <h1>Cryptasia</h1>
+        <p id="main"><strong>Start using strong passwords!</strong>
+        Cryptasia lets you use one secret phrase to securely access every website. <a href="how.html">See how it works</a>.<br />
+          Why use Cryptasia? Here's <a href="why.html">7 good reasons</a>!</p>
+        <p id="welcome">Welcome back <strong><span id="user"></span>!<br /></strong><small>Not you?  <a href="http://www.cryptasia.com">Return to the public version</a>.</small></p>
+      </div>
+    </div>
+
+    <div class="form" id="form">
+      <div class="sub">
+        <div  style="position:relative;">
+            <label class="glow" for="service">Service Name <span>e.g. &ldquo;gmail&rdquo; or &ldquo;reddit&rdquo;</span></label>
+            <input type="text" class="text" name="service" id="service" autocomplete="off" />
+            <p id="missing" class="glow" style="position:absolute;top:+2.5em;right:0px;"><small><a href="account.html">Are we missing a service?</a></small></p>
+        </div>
+
+        <label class="glow" for="passphrase">Secret Phrase <span>Try your favorite quote!</span></label>
+        <input type="password" class="password" name="passphrase" id="passphrase" autocomplete="off" />
+
+        <div id="flash">
+            <label class="glow" for="word" style="float:left;">Your generated password is...</label>
+            <input type="text" class="text" id="word" name="inputword" autocomplete="off" />
+            <div id="d_clip_container"><div id="d_clip_button"><span id="copygo">copy+go</span></div></div>
+        </div>
+        <div id="noflash">
+            <p class="glow" style="font-size:0.9em;">Your generated password is...</p>
+            <input type="text" class="text" id="word" name="inputword" autocomplete="off" style="text-align:center;"/>
+            <button type="button" id="mobilego">go</button>
+        </div>
+
+      </div>
+
+      <div class="sub"><center><small><a class="glow" href="account.html">Get an account</a><br />
+                               &copy; <a class="copy glow" href="http://www.karlgluck.com/">Karl Gluck 2013</a></small></center></div>
+    </div>
+
+    <div id="mobilebuffer" style="height:0px;margin:0;padding:0;"></div>
+
+    <script type="text/javascript" src="./lib/cryptasia.js"></script>
+    
+  </body>
+</html>
+
